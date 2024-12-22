@@ -1,0 +1,22 @@
+[project]
+name = "nn-framework"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flax>=0.10.2",
+    "jax>=0.4.38",
+    "jupyter>=1.1.1",
+    "nb-clean>=4.0.1",
+    "tensorflow_cpu>=2.18.0",
+    "torch>=2.5.1",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
